@@ -25,6 +25,8 @@ const getServerURL = () => {
   return process.env.PAYLOAD_PUBLIC_SERVER_URL ?? "";
 };
 
+console.log("Server URL:", getServerURL());
+
 export default buildConfig({
   serverURL: getServerURL(),
   admin: {
